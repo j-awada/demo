@@ -4,7 +4,7 @@
 
 [Full Changelog](https://github.com/j-awada/demo/compare/fcd359ea377f814363a94fc0791157b1f11dd3f9...v1.0.0)
 
-**Merged pull requests:**
+**Implemented enhancements:**
 
 - feat: Add one.py file [\#1](https://github.com/j-awada/demo/pull/1) ([j-awada](https://github.com/j-awada))
 
