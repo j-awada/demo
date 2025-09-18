@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/j-awada/demo/tree/HEAD)
+## [v1.0.0](https://github.com/j-awada/demo/tree/v1.0.0) (2025-09-18)
 
-[Full Changelog](https://github.com/j-awada/demo/compare/fcd359ea377f814363a94fc0791157b1f11dd3f9...HEAD)
+[Full Changelog](https://github.com/j-awada/demo/compare/fcd359ea377f814363a94fc0791157b1f11dd3f9...v1.0.0)
 
 **Merged pull requests:**
 
