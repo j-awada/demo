@@ -1,0 +1,43 @@
+name: Demo
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_ENV_VAR: "this is an env"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print GitHub context variables
+        run: |
+          echo "Repository:   ${{ github.repository }}"
+          echo "Branch:       ${{ github.ref_name }}"
+          echo "Actor:        ${{ github.actor }}"
+          echo "Commit SHA:   ${{ github.sha }}"
+          echo "Event name:   ${{ github.event_name }}"
+
+      - name: Print environment variable
+        run: echo "MY_ENV_VAR = $MY_ENV_VAR"
+
+      - name: Check if a secret was set
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}
+        run: |
+          echo "Secret is set: $([[ -n "$MY_SECRET" ]] && echo yes || echo no)"
+
+      - name: Run basic commands
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Files in workspace:"
+          ls -la
+          echo "OS info:"
+          uname -a
