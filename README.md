@@ -7,6 +7,9 @@
 brew install act
 act --version
 
+# List workflows
+act -l
+
 # Run workflow locally
 act workflow_dispatch -W .github/workflows/local.yaml
 
